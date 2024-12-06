@@ -18,7 +18,7 @@ function App() {
         setMeaning(checkedWord[0].meaning);
         return;
       }
-      setMeaning("Word not found in the dictionary");
+      setMeaning("Word not found in the dictionary.");
       return;
     }
   }
