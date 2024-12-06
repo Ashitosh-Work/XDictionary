@@ -12,15 +12,13 @@ function App() {
 
   const clickhandler = () => {
     let toCheck = word.toLowerCase();
-    if (word !== "") {
-      let checkedWord = dictionary.current.filter(ele => ele.word.toLowerCase() === toCheck);
-      if (checkedWord.length) {
-        setMeaning(checkedWord[0].meaning);
-        return;
-      }
-      setMeaning("Word not found in the dictionary. ");
+    let checkedWord = dictionary.current.filter(ele => ele.word.toLowerCase() === toCheck);
+    if (checkedWord.length) {
+      setMeaning(checkedWord[0].meaning);
       return;
     }
+    setMeaning("Word not found in the dictionary. ");
+    return;
   }
 
   return (
