@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <h1>Dictionary App</h1>
-      <input value={word} onChange={(e) => setWord((e.target.value))} required placeholder='Search for a word...' />
+      <input type='text' value={word} onChange={(e) => setWord((e.target.value))} required placeholder='Search for a word...' />
       <button onClick={clickhandler}>Search</button>
       <h4>Definition:</h4>
       <p>{meaning}</p>
